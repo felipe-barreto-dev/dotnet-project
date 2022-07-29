@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "h7rqJFzOiFBbKRQ5s380Iqeg8VLJfUrcCpUAjx4k5WkjgSMm+aa+00ApOop0Vmq4V8M4JbuK0GxExWVfGXVfjA==",
+  "dgSpecHash": "FBbaJIbRrJFSGS17zAyEHFtCWv7LaNuEPUop4KR4KdnxDFlGX5cU7YI7zU+lAOde4JIT8vZbjFg5jAAtSZ1P8g==",
   "success": true,
   "projectFilePath": "C:\\Users\\fbarr\\OneDrive\\Documentos\\GitHub\\dotnet-project\\dotnet-project.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fbarr\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\fbarr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fbarr\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\fbarr\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

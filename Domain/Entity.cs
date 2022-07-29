@@ -1,6 +1,8 @@
+using Flunt.Notifications;
+
 namespace dotnet_project.Domain;
 
-public abstract class Entity {
+public abstract class Entity : Notifiable<Notification> {
     public Entity()
     {
         Id = Guid.NewGuid();
