@@ -1,4 +1,5 @@
 using dotnet_project.Domain.Products;
+using Flunt.Notifications;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -20,6 +21,8 @@ public class ApplicationDbContext : DbContext {
             .Property(p => p.Description).HasMaxLength(255);
         builder.Entity<Category>()
             .Property(c => c.Name).IsRequired();
+        builder.Ignore<Notifiable<Notification>>();
+	    builder.Ignore<Notification>();
     }
 
     protected override void ConfigureConventions(ModelConfigurationBuilder configuration) {
