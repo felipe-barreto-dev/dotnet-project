@@ -11,10 +11,10 @@ public class ProductPost {
 
     public static IResult Action(ProductRequest productRequest, ApplicationDbContext context) {
 
-        var product = new Product(productRequest.Name);
+        var product = new Product(productRequest.Name, productRequest.CategoryId, productRequest.Description);
 
         if (!product.IsValid) {
-            return Results.BadRequest();
+            return Results.BadRequest(product.Notifications);
         }
         
         context.Products.Add(product);

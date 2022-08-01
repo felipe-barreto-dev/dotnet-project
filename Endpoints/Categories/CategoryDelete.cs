@@ -14,8 +14,14 @@ namespace dotnet_project.Endpoints.Categories
         public static IResult Action([FromRoute] Guid Id, ApplicationDbContext context)
         {
             var category = context.Categories.Where(c => c.Id == Id).First();
+
+            if (category == null) {
+                return Results.NotFound();
+            }
+
             context.Categories.Remove(category);
             context.SaveChanges();
+            
             return Results.Ok();
         }
     }

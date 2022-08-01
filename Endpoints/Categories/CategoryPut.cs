@@ -14,6 +14,10 @@ namespace dotnet_project.Endpoints.Categories
         {
             var category = context.Categories.Where(c => c.Id == Id).FirstOrDefault();
 
+            if (category == null) {
+                return Results.NotFound();
+            }
+ 
             category.Name = categoryRequest.Name;
             category.Active = categoryRequest.Active;
   
