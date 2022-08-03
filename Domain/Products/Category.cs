@@ -10,6 +10,7 @@ public class Category : Entity {
     public Category(string name, string createdBy, string editedBy) {
         var contract = new Contract<Category>()
             .IsNullOrEmpty(name, "Name")
+            .IsGreaterOrEqualsThan(name, 3, "Name")
             .IsNullOrEmpty(createdBy, "CreatedBy")
             .IsNullOrEmpty(editedBy, "EditeBy");
     
